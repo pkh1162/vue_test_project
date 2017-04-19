@@ -1,4 +1,5 @@
 {
+  "homepage": "https://pkh1162.github.io/vue_test_project",
   "name": "turnout",
   "description": "A Vue.js project",
   "version": "1.0.0",
@@ -6,7 +7,8 @@
   "private": true,
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
+    "deploy": "node_modules/gh-pages/bin/gh-pages -d dist"
   },
   "dependencies": {
     "firebase": "^3.7.8",
@@ -21,6 +23,7 @@
     "cross-env": "^3.0.0",
     "css-loader": "^0.25.0",
     "file-loader": "^0.9.0",
+    "gh-pages": "^0.12.0",
     "vue-loader": "^11.1.4",
     "vue-template-compiler": "^2.2.1",
     "webpack": "^2.2.0",
